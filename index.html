@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
 
@@ -36,11 +36,10 @@
       }
       .a_header_top {
         height: 113px;
-        border: 1px dashed purple;
+        border-bottom:1px solid #707070;
       }
       .a_header_bottom {
-        height: 60px;
-        border: 1px dashed black;
+        
       }
       .a_main {
         background-color: green;
@@ -88,6 +87,9 @@
       .a_roboto_m {
         font-family: "Roboto", sans-serif;
       }
+      .a_roboto_r{
+        font-family: "Roboto", sans-serif;
+      }
       .a_recomendedforyou > .col {
         height: 388px;
       }
@@ -113,13 +115,27 @@
       input:focus{
           box-shadow: none !important;
       }
+      .a_header_bottom .active{
+        color:#ff4f04;
+        border-bottom: 3px solid #ff4f04;
+      }
+     /*  button:active,button:link,button:visited{
+        box-shadow: 0px 0px 10px 10px red !important;
+        border:5px solid blue !important;
+      } */
+      .a_hdr_btm > li > a{
+        color:#302F2F;
+        height: 60px;
+        line-height: 60px;
+        padding: 0px 15px;
+      }
     </style>
   </head>
   <body>
     <header>
-      <div class="a_header_top">
-        <div class="container a_tbdr">
-          <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="a_header_top ">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light mt-3">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                   <img src="img/logo.png">
@@ -146,7 +162,7 @@
                     <button class="btn" type="submit">
                       <img src="img/Search.svg">
                     </button>
-                  </form>
+                </form>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 float-end">
                   <li class="nav-item">
                     <a href="#" class="nav-link active position-relative">
@@ -179,7 +195,44 @@
         </div>
       </div>
       <div class="a_header_bottom">
-        <div class="container a_tbdr"></div>
+        <div class="container">
+          <ul class="nav a_roboto_r a_hdr_btm">
+            <li class="nav-item me-5">
+              <div class="dropdown mt-2">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-bars"></i> All Categories
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link fs-6 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" href="#">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" href="#">Trendings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" href="#">Deals For You</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" href="#">Discounts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" href="#">Weekly Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6">Become a Vendor</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <div class="a_main">
