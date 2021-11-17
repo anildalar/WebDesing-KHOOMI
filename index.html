@@ -33,6 +33,7 @@
         top: 0px;
         left: 0px;
         width: 100%;
+        z-index: 10000;
       }
       .a_header_top {
         height: 113px;
@@ -72,7 +73,6 @@
         background-size: cover;
       }
       .a_main4 {
-        height: 1047px;
         border: 1px dashed crimson;
         background-color: #fff;
       }
@@ -135,12 +135,15 @@
         padding: 0px 15px;
       }
       .a_newcollection{
-        height: 700px;
       }
       .a_newcol_probox{
         display: block;
         background-color: #F5F5F5;
         border-radius: 10px;
+      }
+      .a_drk_txt:hover{
+        background-color: #FF5004;
+        border:1px solid #FF5004;
       }
     </style>
   </head>
@@ -310,7 +313,7 @@
             </div>
             <div class="col p-2">
               <div class="text-center">
-                <img src="img/2.png" />
+                <img src="img/2.png" clas/>
                 <h5 class="a_pop_r">Single Tour</h5>
                 <button
                   type="button"
@@ -335,7 +338,6 @@
               pe-5
               pt-3
               pb-3
-              mb-5
             "
           >
             Explore Other Products
@@ -344,13 +346,13 @@
       </div>
       <div class="a_main3">C1 - banner</div>
       <div class="a_main4">
-        <div class="container pb-5 text-center a_tbdr">
+        <div class="container pb-5 text-center">
           <h4 class="a_pop_r fs-6 text-center mt-5">
             STRAIGHT FROM NIKE
           </h4>
           <h2 class="a_pop_r text-center">NEW COLLECTION</h2>
-          <div class="row a_newcollection">
-            <div class="col">
+          <div class="row a_newcollection mb-5">
+            <div class="col-12 col-sm-6">
               <div class="row h-100">
                 <div class="col-6  p-2 h-50">
                   <a href="#" class="a_newcol_probox h-100">
@@ -390,10 +392,25 @@
                 </div>
               </div>
             </div>
-            <div class="col p-2">
-              <div class=" a_newcol_probox h-100">D</div>
+            <div class="col-12 col-sm-6  p-2">
+              <div class=" a_newcol_probox h-100 position-relative">
+                <span class="badge rounded-pill bg-dark position-absolute a_pop_m ps-3 pe-3 pt-2 pb-2" style="top:20px;left:20px">Sale 50%</span>
+                <span class="badge rounded-pill bg-white position-absolute a_pop_m ps-3 pe-3 pt-2 pb-2" style="top:20px;right:20px;color:#FF4F04">$99</span>
+                <img src="img/Image/Image.png" class="img-fluid">
+                <h3 class="text-start ms-5 a_pop_r">Nike Air Force 1 Shadow</h3>
+                <span class="text-start d-block ms-5 a_pop_r">Brand: Nike</span>
+              </div>
             </div>
           </div>
+          <button
+            type="button"
+            class="
+              btn btn-outline-secondary btn-lg
+              a_roboto_m a_drk_txt
+            "
+          >
+            Explore Other Products
+          </button>
         </div>
 
       </div>
