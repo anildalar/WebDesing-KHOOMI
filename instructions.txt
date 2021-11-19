@@ -12,3 +12,13 @@ https://github.com/anildalar/WebDesing-KHOOMI
 https://xd.adobe.com/view/a4917a73-3c36-4b05-9232-dcc5bb72dbbf-f1c2/screen/d50201dc-7d2f-435c-8431-6ad7559a5d94/specs/
 
 Blocking Technique
+
+Header Menu Should be displayed only on Desktop Resolution
+
+992>= Show Header Bottom
+
+991 < Hide Header Bottom
+
+https://getbootstrap.com/docs/5.1/utilities/display/
+
+u l = unordered list
